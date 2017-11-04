@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/mainListViewChip"
+        style="@style/ListaMetroCOM"
+        android:layout_width="fill_parent"
+        android:layout_height="358dp"
+        android:layout_weight="0.61"
+        android:background="@string/colorFondoPantallas"
+        android:choiceMode="singleChoice" >
+
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.87" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.54"
+            android:background="@string/colorFondoPantallas"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.54"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lblIdCliente"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=" NUMERO DE CHIP : "
+                    android:textColor="@string/colorTxtEdit"
+                     />
+
+                <EditText
+                    android:id="@+id/txtNuevoChip"
+                    android:layout_width="318dp"
+                    android:layout_height="wrap_content"
+                    android:background="@string/colorTxtEdit"
+                    android:ems="10"
+                    android:maxLines="1"
+                    android:textColor="@string/colorTextoTxtEdit"
+                    android:width="275dp"
+                    android:maxLength="13" >
+
+                    <requestFocus />
+                </EditText>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.54"
+                android:background="@string/colorFondoPantallas"
+                android:orientation="vertical" >
+
+			<Button
+			    android:id="@+id/cmdAniadirChip"
+			    android:layout_width="match_parent"
+			    android:layout_height="28dp"
+			    android:background="@string/colorFondoBoton"
+			    android:onClick="cmdAniadirChip_Onclick"
+			    android:text="Añadir"
+			    android:textColor="@string/colorTextoBoton" />
+
+             <!--     <Button
+                    android:id="@+id/cmdAniadirChip"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:text="Añadir Chip a PDV" /> -->
+
+                <TextView
+                    android:id="@+id/lblUsuarioConectado"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="usr"
+                    android:textColor="@string/colorTxtEdit" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

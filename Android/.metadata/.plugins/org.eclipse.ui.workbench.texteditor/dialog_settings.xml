@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="257" key="DIALOG_WIDTH"/>
+		<item value="346" key="DIALOG_Y_ORIGIN"/>
+		<item value="1058" key="DIALOG_X_ORIGIN"/>
+		<item value="380" key="DIALOG_HEIGHT"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="idClienteBuscar" key="selection"/>
+		<list key="findhistory">
+			<item value="idClienteBuscar"/>
+			<item value="System.out"/>
+			<item value="clientesMetroCOM"/>
+			<item value="listAdapter"/>
+			<item value="ListadoPDV"/>
+			<item value="android:textColor=&quot;@android:color/black&quot;"/>
+			<item value="&quot;@android:color/holo_red_light&quot;"/>
+			<item value="Latitude"/>
+		</list>
+		<list key="replacehistory">
+			<item value="android:textColor=&quot;@string/colorTxtEdit&quot;"/>
+			<item value="&quot;@string/fondoTxtEdit&quot;"/>
+			<item value="android:textColor=&quot;@android:color/black&quot;"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;ETA&apos; to &apos;metroCOM&apos;" description="Rename resource &apos;ETA&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/ETA" name="metroCOM" stamp="1355592301098" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;metroCOM&apos; to &apos;metroCOMmbl&apos;" description="Rename resource &apos;metroCOM&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/metroCOM" name="metroCOMmbl" stamp="1355592497507" updateReferences="true"/>
+</session>

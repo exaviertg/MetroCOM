@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://android.metrocom.services.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://android.metrocom.services.com" xmlns:intf="http://android.metrocom.services.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://android.metrocom.services.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="consultarInformacionClienteMetroCOM">
+    <complexType>
+     <sequence>
+      <element name="idCliente" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="consultarInformacionClienteMetroCOMResponse">
+    <complexType>
+     <sequence>
+      <element name="consultarInformacionClienteMetroCOMReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guardarClienteMetroCOM">
+    <complexType>
+     <sequence>
+      <element name="idCliente" type="xsd:string"/>
+      <element name="descripcion" type="xsd:string"/>
+      <element name="ruc" type="xsd:string"/>
+      <element name="primerNombre" type="xsd:string"/>
+      <element name="segundoNombre" type="xsd:string"/>
+      <element name="primerApellido" type="xsd:string"/>
+      <element name="segundoApellido" type="xsd:string"/>
+      <element name="telefono" type="xsd:string"/>
+      <element name="celular" type="xsd:string"/>
+      <element name="direccion" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="guardarClienteMetroCOMResponse">
+    <complexType>
+     <sequence>
+      <element name="guardarClienteMetroCOMReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="logueoUsuarioMetroCOM">
+    <complexType>
+     <sequence>
+      <element name="usuario" type="xsd:string"/>
+      <element name="password" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="logueoUsuarioMetroCOMResponse">
+    <complexType>
+     <sequence>
+      <element name="logueoUsuarioMetroCOMReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="consultarClientesMetroCOM">
+    <complexType>
+     <sequence>
+      <element name="filtro" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="consultarClientesMetroCOMResponse">
+    <complexType>
+     <sequence>
+      <element name="consultarClientesMetroCOMReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="consultarPDVPorcliente">
+    <complexType>
+     <sequence>
+      <element name="idCliente" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="consultarPDVPorclienteResponse">
+    <complexType>
+     <sequence>
+      <element name="consultarPDVPorclienteReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="consultarChipsPorCliente">
+    <complexType>
+     <sequence>
+      <element name="idCliente" type="xsd:string"/>
+      <element name="pdv" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="consultarChipsPorClienteResponse">
+    <complexType>
+     <sequence>
+      <element name="consultarChipsPorClienteReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="aniadirChipAPdv">
+    <complexType>
+     <sequence>
+      <element name="idCliente" type="xsd:string"/>
+      <element name="pdv" type="xsd:string"/>
+      <element name="numero" type="xsd:string"/>
+      <element name="usuario" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="aniadirChipAPdvResponse">
+    <complexType>
+     <sequence>
+      <element name="aniadirChipAPdvReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="crearPDV">
+    <complexType>
+     <sequence>
+      <element name="idCliente" type="xsd:string"/>
+      <element name="descripcion" type="xsd:string"/>
+      <element name="lat_grados" type="xsd:string"/>
+      <element name="lat_minutos" type="xsd:string"/>
+      <element name="lat_segundos" type="xsd:string"/>
+      <element name="lon_grados" type="xsd:string"/>
+      <element name="lon_minutos" type="xsd:string"/>
+      <element name="lon_segundos" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="crearPDVResponse">
+    <complexType>
+     <sequence>
+      <element name="crearPDVReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="guardarClienteMetroCOMResponse">
+
+      <wsdl:part element="impl:guardarClienteMetroCOMResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="crearPDVResponse">
+
+      <wsdl:part element="impl:crearPDVResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="consultarChipsPorClienteResponse">
+
+      <wsdl:part element="impl:consultarChipsPorClienteResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="crearPDVRequest">
+
+      <wsdl:part element="impl:crearPDV" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="consultarInformacionClienteMetroCOMResponse">
+
+      <wsdl:part element="impl:consultarInformacionClienteMetroCOMResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="consultarPDVPorclienteResponse">
+
+      <wsdl:part element="impl:consultarPDVPorclienteResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="consultarChipsPorClienteRequest">
+
+      <wsdl:part element="impl:consultarChipsPorCliente" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="aniadirChipAPdvRequest">
+
+      <wsdl:part element="impl:aniadirChipAPdv" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="consultarClientesMetroCOMRequest">
+
+      <wsdl:part element="impl:consultarClientesMetroCOM" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="aniadirChipAPdvResponse">
+
+      <wsdl:part element="impl:aniadirChipAPdvResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="consultarInformacionClienteMetroCOMRequest">
+
+      <wsdl:part element="impl:consultarInformacionClienteMetroCOM" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="logueoUsuarioMetroCOMResponse">
+
+      <wsdl:part element="impl:logueoUsuarioMetroCOMResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="logueoUsuarioMetroCOMRequest">
+
+      <wsdl:part element="impl:logueoUsuarioMetroCOM" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="consultarPDVPorclienteRequest">
+
+      <wsdl:part element="impl:consultarPDVPorcliente" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="consultarClientesMetroCOMResponse">
+
+      <wsdl:part element="impl:consultarClientesMetroCOMResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="guardarClienteMetroCOMRequest">
+
+      <wsdl:part element="impl:guardarClienteMetroCOM" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="solicitudesAndroid">
+
+      <wsdl:operation name="consultarInformacionClienteMetroCOM">
+
+         <wsdl:input message="impl:consultarInformacionClienteMetroCOMRequest" name="consultarInformacionClienteMetroCOMRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:consultarInformacionClienteMetroCOMResponse" name="consultarInformacionClienteMetroCOMResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="guardarClienteMetroCOM">
+
+         <wsdl:input message="impl:guardarClienteMetroCOMRequest" name="guardarClienteMetroCOMRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:guardarClienteMetroCOMResponse" name="guardarClienteMetroCOMResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="logueoUsuarioMetroCOM">
+
+         <wsdl:input message="impl:logueoUsuarioMetroCOMRequest" name="logueoUsuarioMetroCOMRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:logueoUsuarioMetroCOMResponse" name="logueoUsuarioMetroCOMResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="consultarClientesMetroCOM">
+
+         <wsdl:input message="impl:consultarClientesMetroCOMRequest" name="consultarClientesMetroCOMRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:consultarClientesMetroCOMResponse" name="consultarClientesMetroCOMResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="consultarPDVPorcliente">
+
+         <wsdl:input message="impl:consultarPDVPorclienteRequest" name="consultarPDVPorclienteRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:consultarPDVPorclienteResponse" name="consultarPDVPorclienteResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="consultarChipsPorCliente">
+
+         <wsdl:input message="impl:consultarChipsPorClienteRequest" name="consultarChipsPorClienteRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:consultarChipsPorClienteResponse" name="consultarChipsPorClienteResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="aniadirChipAPdv">
+
+         <wsdl:input message="impl:aniadirChipAPdvRequest" name="aniadirChipAPdvRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:aniadirChipAPdvResponse" name="aniadirChipAPdvResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="crearPDV">
+
+         <wsdl:input message="impl:crearPDVRequest" name="crearPDVRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:crearPDVResponse" name="crearPDVResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="solicitudesAndroidSoapBinding" type="impl:solicitudesAndroid">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="consultarInformacionClienteMetroCOM">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="consultarInformacionClienteMetroCOMRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="consultarInformacionClienteMetroCOMResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="guardarClienteMetroCOM">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="guardarClienteMetroCOMRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="guardarClienteMetroCOMResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="logueoUsuarioMetroCOM">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="logueoUsuarioMetroCOMRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="logueoUsuarioMetroCOMResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="consultarClientesMetroCOM">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="consultarClientesMetroCOMRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="consultarClientesMetroCOMResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="consultarPDVPorcliente">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="consultarPDVPorclienteRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="consultarPDVPorclienteResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="consultarChipsPorCliente">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="consultarChipsPorClienteRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="consultarChipsPorClienteResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="aniadirChipAPdv">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="aniadirChipAPdvRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="aniadirChipAPdvResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="crearPDV">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="crearPDVRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="crearPDVResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="solicitudesAndroidService">
+
+      <wsdl:port binding="impl:solicitudesAndroidSoapBinding" name="solicitudesAndroid">
+
+         <wsdlsoap:address location="http://localhost:8080/metrocomWS/services/solicitudesAndroid"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

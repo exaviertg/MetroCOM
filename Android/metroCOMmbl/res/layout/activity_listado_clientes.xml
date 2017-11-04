@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/mainListView"
+        style="@style/ListaMetroCOM"
+        android:layout_width="fill_parent"
+        android:layout_height="392dp"
+        android:layout_weight="1.86"
+        android:background="@string/colorFondoPantallas"
+        android:choiceMode="singleChoice" >
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.87" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.54"
+            android:background="@string/colorFondoPantallas"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.54" >
+
+                <EditText
+                    android:id="@+id/txtBuscar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@string/colorTxtEdit"
+                    android:ems="10"
+                    android:textColor="@string/colorTextoTxtEdit"
+                    android:width="275dp" >
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/cmdBuscar"
+                    android:layout_width="42dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.54"
+                    android:background="@string/colorFondoBoton"
+                    android:onClick="search_Onclick"
+                    android:text="..."
+                    android:textColor="@string/colorTextoBoton" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.54"
+                android:background="@string/colorFondoPantallas"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/lblUsuarioConectado"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="@string/colorTxtEdit" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

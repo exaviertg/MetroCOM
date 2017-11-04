@@ -1,0 +1,71 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from solicitudesAndroidService WSDL service -->
+
+  <service name="solicitudesAndroid" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://android.metrocom.services.com"/>
+      <parameter name="wsdlServiceElement" value="solicitudesAndroidService"/>
+      <parameter name="schemaQualified" value="http://android.metrocom.services.com"/>
+      <parameter name="wsdlServicePort" value="solicitudesAndroid"/>
+      <parameter name="className" value="com.services.metrocom.android.SolicitudesAndroidSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="solicitudesAndroid"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="consultarInformacionClienteMetroCOM" qname="operNS:consultarInformacionClienteMetroCOM" xmlns:operNS="http://android.metrocom.services.com" returnQName="retNS:consultarInformacionClienteMetroCOMReturn" xmlns:retNS="http://android.metrocom.services.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:idCliente" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="guardarClienteMetroCOM" qname="operNS:guardarClienteMetroCOM" xmlns:operNS="http://android.metrocom.services.com" returnQName="retNS:guardarClienteMetroCOMReturn" xmlns:retNS="http://android.metrocom.services.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:idCliente" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:descripcion" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:ruc" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:primerNombre" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:segundoNombre" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:primerApellido" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:segundoApellido" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:telefono" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:celular" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:direccion" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="logueoUsuarioMetroCOM" qname="operNS:logueoUsuarioMetroCOM" xmlns:operNS="http://android.metrocom.services.com" returnQName="retNS:logueoUsuarioMetroCOMReturn" xmlns:retNS="http://android.metrocom.services.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:usuario" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:password" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="consultarClientesMetroCOM" qname="operNS:consultarClientesMetroCOM" xmlns:operNS="http://android.metrocom.services.com" returnQName="retNS:consultarClientesMetroCOMReturn" xmlns:retNS="http://android.metrocom.services.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:filtro" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="consultarPDVPorcliente" qname="operNS:consultarPDVPorcliente" xmlns:operNS="http://android.metrocom.services.com" returnQName="retNS:consultarPDVPorclienteReturn" xmlns:retNS="http://android.metrocom.services.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:idCliente" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="consultarChipsPorCliente" qname="operNS:consultarChipsPorCliente" xmlns:operNS="http://android.metrocom.services.com" returnQName="retNS:consultarChipsPorClienteReturn" xmlns:retNS="http://android.metrocom.services.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:idCliente" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:pdv" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="aniadirChipAPdv" qname="operNS:aniadirChipAPdv" xmlns:operNS="http://android.metrocom.services.com" returnQName="retNS:aniadirChipAPdvReturn" xmlns:retNS="http://android.metrocom.services.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:idCliente" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:pdv" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:numero" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:usuario" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="crearPDV" qname="operNS:crearPDV" xmlns:operNS="http://android.metrocom.services.com" returnQName="retNS:crearPDVReturn" xmlns:retNS="http://android.metrocom.services.com" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:idCliente" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:descripcion" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:lat_grados" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:lat_minutos" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:lat_segundos" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:lon_grados" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:lon_minutos" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:lon_segundos" xmlns:pns="http://android.metrocom.services.com" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="consultarClientesMetroCOM guardarClienteMetroCOM consultarInformacionClienteMetroCOM logueoUsuarioMetroCOM consultarPDVPorcliente crearPDV aniadirChipAPdv consultarChipsPorCliente"/>
+
+  </service>
+</deployment>

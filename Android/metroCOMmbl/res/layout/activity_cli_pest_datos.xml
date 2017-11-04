@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black" 
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" ><Button
+                        android:id="@+id/cmdActualizar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@string/colorFondoBoton"
+                        android:minHeight="30dip"
+                        android:onClick="cmdActualicar_Onclick"
+                        android:text="Enviar"
+                        android:textColor="@string/colorTextoBoton"
+                        android:textColorLink="@string/colorTextoBoton"
+                        android:textSize="12dp"
+                        android:typeface="normal" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/lblIdCliente"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:text="  ID CLIENTE : "
+                            android:textColor="@string/colorTxtEdit" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/lblCedula"
+                            android:layout_width="320dp"
+                            android:layout_height="match_parent"
+                            android:text="CEDULA"
+                            android:textColor="@string/colorTxtEdit" />
+
+                        <EditText
+                            android:id="@+id/txtCedula"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@string/fondoTxtEdit"
+                            android:maxLength="13"
+                            android:maxLines="1"
+                            android:text="1712026879"
+                            android:textColor="@string/colorTextoTxtEdit" >
+
+                            <requestFocus />
+                        </EditText>
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/lblPrimerNombre"
+                            android:layout_width="320dp"
+                            android:layout_height="match_parent"
+                            android:text="PRIMER NOMBRE"
+                            android:textColor="@string/colorTxtEdit" />
+
+                        <EditText
+                            android:id="@+id/txtPrimerNombre"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@string/fondoTxtEdit"
+                            android:maxLength="32"
+                            android:maxLines="1"
+                            android:text="EDUARDO"
+                            android:textColor="@string/colorTextoTxtEdit" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/lblSegundoNombre"
+                            android:layout_width="320dp"
+                            android:layout_height="match_parent"
+                            android:text="SEGUNDO NOMBRE"
+                            android:textColor="@string/colorTxtEdit" />
+
+                        <EditText
+                            android:id="@+id/txtSegundoNombre"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@string/fondoTxtEdit"
+                            android:maxLength="32"
+                            android:maxLines="1"
+                            android:text="JAVIER"
+                            android:textColor="@string/colorTextoTxtEdit" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/lblPrimerApellido"
+                            android:layout_width="320dp"
+                            android:layout_height="match_parent"
+                            android:text="PRIMER APELLIDO"
+                            android:textColor="@string/colorTxtEdit" />
+
+                        <EditText
+                            android:id="@+id/txtPrimerApellido"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@string/fondoTxtEdit"
+                            android:maxLength="32"
+                            android:maxLines="1"
+                            android:text="TAYUPANTA"
+                            android:textColor="@string/colorTextoTxtEdit" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/lblSegundoApellido"
+                            android:layout_width="320dp"
+                            android:layout_height="match_parent"
+                            android:text="SEGUNDO APELLIDO"
+                            android:textColor="@string/colorTxtEdit" />
+
+                        <EditText
+                            android:id="@+id/txtSegundoApellido"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@string/fondoTxtEdit"
+                            android:maxLength="32"
+                            android:maxLines="1"
+                            android:text="GUADALUPE"
+                            android:textColor="@string/colorTextoTxtEdit" />
+
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/lblTelefono"
+                            android:layout_width="320dp"
+                            android:layout_height="match_parent"
+                            android:text="TELEFONO"
+                            android:textColor="@string/colorTxtEdit" />
+
+                        <EditText
+                            android:id="@+id/txtTelefono"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@string/fondoTxtEdit"
+                            android:maxLength="9"
+                            android:maxLines="1"
+                            android:text="022348908"
+                            android:textColor="@string/colorTextoTxtEdit" />
+
+                    </LinearLayout>
+                </TableRow>
+
+               
+
+                <TableRow
+                    android:id="@+id/tableRow9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/lblDireccion"
+                            android:layout_width="320dp"
+                            android:layout_height="match_parent"
+                            android:text="DIRECCION"
+                            android:textColor="@string/colorTxtEdit" />
+
+                        <EditText
+                            android:id="@+id/txtDireccion"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@string/fondoTxtEdit"
+                            android:lines="2"
+                            android:maxLength="64"
+                            android:maxLines="2"
+                            android:text="LA ARMENIA - CONJUNTO VALLE CARTAGO"
+                            android:textColor="@string/colorTextoTxtEdit" />
+
+                    </LinearLayout>
+                </TableRow>
+                
+                 <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+
+                        <TextView
+                            android:id="@+id/lblCelular"
+                            android:layout_width="320dp"
+                            android:layout_height="match_parent"
+                            android:text="CELULAR"
+                            android:textColor="@string/colorTxtEdit"
+                            android:visibility="invisible" />
+
+
+
+                        <EditText
+                            android:id="@+id/txtCelular"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@string/fondoTxtEdit"
+                            android:maxLength="10"
+                            android:maxLines="1"
+                            android:textColor="@string/colorTextoTxtEdit"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

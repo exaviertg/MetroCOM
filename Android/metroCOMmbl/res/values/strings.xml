@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="app_name">Admin Clientes</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Administración Clientes</string>
+    
+    <string name="hello">LocationGPS, prueba de localización</string>    
+	<string name="gps_signal_not_found">Señal de GPS no encontrada. Compruebe el estado del GPS</string>
+	<string name="gps_signal_found">Señal de GPS encontrada correctamente</string>
+	<string name="search">Buscando...</string>
+	<string name="search_signal_gps">Buscando señal GPS</string>
+	<string name="btsearch">Buscar posicion GPS</string>
+	
+	<!-- color fondo de texBox  -->
+	<string name="fondoTxtEdit">@android:color/holo_red_light</string>
+	
+	<!-- fore color label -->
+	<string name="colorTxtEdit">@android:color/holo_red_light</string>
+	
+	<!-- fore color txtEdit -->
+	<string name="colorTextoTxtEdit">@android:color/white</string>
+	
+	<!-- background pantallas  -->
+	<string name="colorFondoPantallas">@android:color/background_dark</string>
+
+    <!-- color fondo boton  -->
+	<string name="colorFondoBoton">@android:color/darker_gray</string>
+	<!-- color texto boton  -->
+	<string name="colorTextoBoton">@android:color/holo_red_light</string>
+</resources>

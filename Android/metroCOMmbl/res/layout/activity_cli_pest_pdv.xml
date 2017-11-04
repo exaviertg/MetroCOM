@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <Button android:id="@+id/cmdRefrescar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@string/colorFondoBoton" android:minHeight="30dip" android:onClick="cmdRefrescar_click" android:text="Refrescar" android:textColor="@string/colorTextoBoton" /><TextView
+        android:id="@+id/lblInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@string/colorFondoPantallas"
+        android:text="                    PDV    :     SALDO"
+        android:textColor="@string/colorTxtEdit" />  
+
+    <ListView
+        android:id="@+id/mainListViewPDV"
+        style="@style/ListaMetroCOM"
+        android:layout_width="fill_parent"
+        android:layout_height="392dp"
+        android:layout_weight="0.25"
+        android:background="@string/colorFondoPantallas"
+        android:choiceMode="singleChoice" >
+
+    </ListView>
+
+</LinearLayout>

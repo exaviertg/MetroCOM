@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@string/colorFondoPantallas"
+    android:orientation="vertical" >
+
+ <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp" />    
+    
+<Button
+    android:id="@+id/btsearch"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@string/colorFondoBoton"
+    android:minHeight="30dip"
+    android:text="@string/btsearch"
+    android:textColor="@string/colorTextoBoton" />
+
+ <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp" />
+
+<TextView
+    android:id="@+id/outlat"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10px"
+    android:paddingTop="10px"
+    android:text="latitud..."
+    android:textColor="@string/colorTxtEdit" />
+
+<TextView
+    android:id="@+id/outlong"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10px"
+    android:paddingTop="10px"
+    android:text="longitud..."
+    android:textColor="@string/colorTxtEdit" />
+
+ <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp" />
+
+<Button
+    android:id="@+id/cmdRegresar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@string/colorFondoBoton"
+    android:minHeight="30dip"
+    android:onClick="cmd_aceptar_OnClick"
+    android:text="Aceptar"
+    android:textColor="@string/colorTextoBoton" />
+
+ <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp" />
+
+
+<Button
+    android:id="@+id/cmdCancelar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@string/colorFondoBoton"
+    android:minHeight="30dip"
+    android:onClick="cmd_cancelar_OnClick"
+    android:text="Cancelar"
+    android:textColor="@string/colorTextoBoton" />
+
+</LinearLayout>
